@@ -24,7 +24,7 @@ public class StartGame {
             System.out.println("слово:  " + displayingTheHiddenWord);
             System.out.println("ошибка (" + errorCount + "): " + errorChar);
             System.out.println("введите букву: ");
-            Character input = Main.scanner.nextLine().toUpperCase(Locale.ROOT).charAt(0);
+            Character input = Main.readInput();
             System.out.println("\n \n \n \n \n \n \n \n \n \n");
 
             if (hiddenWord.contains(String.valueOf(input))) {

@@ -5,7 +5,7 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Начать новую игру(Y) или выйти(N)?");
-        char choice = scanner.nextLine().toUpperCase(Locale.ROOT).charAt(0); //readInput();
+        char choice = readInput();
         if (choice == 'Y'){
             StartGame.startGame();
         } else if (choice == 'N') {
@@ -14,5 +14,9 @@ public class Main {
         } else {
             System.out.println("Еще раз");
         }
+    }
+
+    static char readInput() {
+        return scanner.nextLine().toUpperCase(Locale.ROOT).charAt(0);
     }
 }
