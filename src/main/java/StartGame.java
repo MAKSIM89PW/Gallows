@@ -6,7 +6,8 @@ public class StartGame {
     static String hiddenWord;              // Загаданное слово
     static String displayingTheHiddenWord; // Отображение загаданного слово
 
-    public static void startGame{
+
+    public static void startGame(){
         String[] field = { "ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX"};
         errorCount = 0;
         hiddenWord = RandomWords.getWords().toUpperCase(Locale.ROOT);
