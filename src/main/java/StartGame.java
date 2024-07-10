@@ -21,6 +21,12 @@ public class StartGame {
 
         while(vinner) {
             System.out.println(fieldmap);
+            System.out.println("слово" + displayingTheHiddenWord);
+            System.out.println("ошибка (" + errorCount + "): " + errorChar);
+            System.out.println("введите букву: ");
+            Character input = Main.scanner.nextLine().toUpperCase(Locale.ROOT).charAt(0);
+            System.out.println("\n \n \n \n \n \n \n \n \n \n");
+
         }
     }
 }
