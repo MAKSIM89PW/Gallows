@@ -14,9 +14,9 @@ public class StartGame {
         String[] field = { "ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX"};
         errorCount = 0;
         errorChar = new ArrayList<>();
-        hiddenWord = RandomWords.getWords().toUpperCase(Locale.ROOT);
+        hiddenWord = SummerWords.getRandomSummerWord().toUpperCase(Locale.ROOT);//RandomWords.getWords().toUpperCase(Locale.ROOT);
         fieldmap = FieldMap.valueOf(field[errorCount]);
-        displayingTheHiddenWord = "*".repeat(hiddenWord.length());
+        displayingTheHiddenWord = SummerWords.obscureWord(hiddenWord);//"*".repeat(hiddenWord.length());
         boolean vinner = true;
 
         while(vinner) {
